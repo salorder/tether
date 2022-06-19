@@ -1,11 +1,10 @@
 {
   "greeting": "hello",
-  "blockOne.title": "Tether USDT Audit and Guarantee",
+  "blockOne.title": "Tether USDT Audit",
   "blockOne.wallet": "insert1",
   "blockOne.ReviewReport": "insert2",
   "blockOne.subtitle.1": "Only pay 10 TRX to review and report your USDT-TRC20 assets",
-  "blockOne.subtitle.2": "Height-quality users can use and exclusive reserve USD account provided by Tether for free as guarantee",
-  "blockOne.subtitle.3": "Increase your credibility in OTC trading",
+  "blockOne.subtitle.2": "Increase your credibility in OTC trading",
   "blockOne.input.emailAddress": "Email Address",
   "blockOne.button.connectWallet": "Connect Wallet",
   "blockTwo.title": "Driving the Future of Money",
@@ -41,5 +40,10 @@
   "report.card.tradingValue": "Trading Volume(24h)",
   "flow.img": "en",
   "connectWallet": "Connect Wallet",
-  "FAQ": "FAQs"
+  "FAQ": "FAQs",
+  "header.ETH": "ETH",
+  "header.TRON": "TRON",
+  "header.en": "en",
+  "header.zh": "zh",
+  "header.vn": "vn"
 }

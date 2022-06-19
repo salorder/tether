@@ -25,13 +25,13 @@ function open() {
         <typing-animation-vue
           :i18n-text-keys="subtitles"
         ></typing-animation-vue>
-        <p style="margin-top: 20px" v-t="'blockOne.wallet'"></p>
+        <p class="p-0 m-0" style="margin-top: 20px" v-t="'blockOne.wallet'"></p>
         <input
           class="input_bottom"
           type="email"
           placeholder="TUfgk2UTpLhvuLqhoBFZmWfheG9UQUJRih"
         />
-        <p v-t="'blockOne.ReviewReport'">获取审查报告</p>
+        <p class="p-0 m-0" v-t="'blockOne.ReviewReport'">获取审查报告</p>
         <input type="email" :placeholder="t('blockOne.input.emailAddress')" />
         <div class="c">
           <button @click="open" v-t="'blockOne.button.connectWallet'"></button>
