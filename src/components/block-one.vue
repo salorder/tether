@@ -25,6 +25,22 @@ function open() {
         <typing-animation-vue
           :i18n-text-keys="subtitles"
         ></typing-animation-vue>
+        <div class="mb-1">
+          <input type="radio" name="ETH" id="ETH" class="w-auto" />
+          <img
+            src="https://coin.top/production/logo/trx.png"
+            alt=""
+            class="imgSet"
+          />
+          <label for="ETH">ETH</label>
+          <input type="radio" name="TRON" id="TRON" class="w-auto ml-2" />
+          <img
+            src="https://coin.top/production/logo/THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF.png"
+            alt=""
+            class="imgSet"
+          />
+          <label for="TRON">TRON</label>
+        </div>
         <p class="p-0 m-0" style="margin-top: 20px" v-t="'blockOne.wallet'"></p>
         <input
           class="input_bottom"
@@ -160,5 +176,9 @@ function open() {
       }
     }
   }
+}
+.imgSet {
+  height: 22px;
+  margin: 0 5px 3px 15px;
 }
 </style>

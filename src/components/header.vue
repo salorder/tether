@@ -12,41 +12,10 @@ const { t } = useI18n();
         <img :src="logoSVG" alt="Tether" />
       </div>
       <div class="links p-0">
-        <!-- <select v-model="$i18n.locale" class="m-0 px-1 px-md-3">
-          <option
-            v-for="locale in $i18n.availableLocales"
-            :key="`locale-${locale}`"
-            :value="locale"
-          >
-            {{ locale }}
-          </option>
-        </select> -->
-        <span class="" id="wOne">
-          <button
-            type="button"
-            class="btn dropdown-toggle bg-transparent"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <span v-t="'header.en'"></span>
-          </button>
-          <div class="dropdown-menu dropdown-menu-right">
-            <button class="dropdown-item" type="button">
-              <span v-t="'header.en'"></span>
-            </button>
-            <button class="dropdown-item" type="button">
-              <span v-t="'header.zh'"></span>
-            </button>
-            <button class="dropdown-item" type="button">
-              <span v-t="'header.vn'"></span>
-            </button>
-          </div>
-        </span>
         <div class="telegram">
           <i class="bx bxl-telegram bx-tada"></i>
         </div>
-        <div class="">
+        <!-- <div class="">
           <button
             type="button"
             class="btn dropdown-toggle bg-transparent"
@@ -57,7 +26,7 @@ const { t } = useI18n();
               alt=""
               class="imgSet"
             />
-            <span v-t="'header.ETH'"></span>
+            <span class="fsz">ETH</span>
           </button>
           <div class="dropdown-menu dropdown-menu-right">
             <button class="dropdown-item" type="button">
@@ -66,7 +35,7 @@ const { t } = useI18n();
                 alt=""
                 class="imgSet"
               />
-              <span v-t="'header.ETH'"></span>
+              <span class="fsz">ETH</span>
             </button>
             <button class="dropdown-item" type="button">
               <img
@@ -74,10 +43,64 @@ const { t } = useI18n();
                 alt=""
                 class="imgSet"
               />
-              <span v-t="'header.TRON'"></span>
+              <span class="fsz">TRON</span>
             </button>
           </div>
-        </div>
+        </div> -->
+        <select v-model="$i18n.locale" class="m-0 px-1 px-md-1 mr-1">
+          <option
+            v-for="locale in $i18n.availableLocales"
+            :key="`locale-${locale}`"
+            :value="locale"
+          >
+            {{ locale }}
+          </option>
+        </select>
+        <!-- <span class="" id="wOne">
+          <button
+            type="button"
+            class="btn dropdown-toggle bg-transparent"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="fsz">en</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" type="button">
+              <span class="fsz">en</span>
+            </button>
+            <button class="dropdown-item" type="button">
+              <span class="fsz">zh</span>
+            </button>
+            <button class="dropdown-item" type="button">
+              <span class="fsz">vn</span>
+            </button>
+          </div>
+        </span> -->
+        <!-- 測試 -->
+        <!-- <span class="" id="wOne">
+          <button
+            type="button"
+            class="btn dropdown-toggle bg-transparent"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="fsz">en</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" v-model="$i18n.locale">
+            <button
+              v-for="locale in $i18n.availableLocales"
+              :key="`locale-${locale}`"
+              :value="locale"
+              class="dropdown-item"
+              type="button"
+            >
+              {{ locale }}
+            </button>
+          </div>
+        </span> -->
       </div>
     </nav>
   </div>
@@ -172,5 +195,8 @@ const { t } = useI18n();
 }
 .dropdown-item img {
   padding-right: 5px;
+}
+.fsz {
+  font-size: 15px !important;
 }
 </style>

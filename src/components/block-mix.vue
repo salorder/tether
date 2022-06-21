@@ -3,8 +3,10 @@ import { computed } from "vue";
 import { useI18n } from "vue-i18n";
 import reportEN from "../assets/report-en.png";
 import reportZH from "../assets/report-zh.png";
+import reportVN from "../assets/report-vn.png";
 import otcEN from "../assets/OTC-en.png";
 import otcZH from "../assets/OTC-zh.png";
+import otcVN from "../assets/OTC-vn.png";
 const { t } = useI18n();
 interface imgs {
   otc: string;
@@ -12,10 +14,27 @@ interface imgs {
 }
 const setImg = computed((): imgs => {
   const locale = t("flow.img");
+  // if (locale === "en") {
+  //   return {
+  //     otc: otcEN,
+  //     report: reportEN,
+  //   };
+  // } else {
+  //   return {
+  //     otc: otcZH,
+  //     report: reportZH,
+  //   };
+  // }
   if (locale === "en") {
     return {
       otc: otcEN,
       report: reportEN,
+    };
+  }
+  if (locale === "vn") {
+    return {
+      otc: otcVN,
+      report: reportVN,
     };
   } else {
     return {
@@ -30,9 +49,7 @@ const setImg = computed((): imgs => {
   <div class="blockMix bg">
     <div class="block" style="flex-grow: 1"></div>
     <div class="contain">
-      <div class="left">
-        <img :src="setImg.report" alt="report" />
-      </div>
+      <div class="left"><img :src="setImg.report" alt="report" /></div>
       <!-- <div class="right">
         <div class="bg">
           <img :src="setImg.otc" alt="OTC trading" />
