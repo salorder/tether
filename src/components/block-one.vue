@@ -8,7 +8,7 @@ const backgroundStyle = `background-image: url( ${backgroundImage} )`;
 const subtitles = [
   "blockOne.subtitle.1",
   "blockOne.subtitle.2",
-  "blockOne.subtitle.3",
+  // "blockOne.subtitle.3",
 ];
 
 function open() {
@@ -25,28 +25,24 @@ function open() {
         <typing-animation-vue
           :i18n-text-keys="subtitles"
         ></typing-animation-vue>
-        <div class="mb-1">
-          <input type="radio" name="ETH" id="ETH" class="w-auto" />
-          <img
-            src="https://coin.top/production/logo/trx.png"
-            alt=""
-            class="imgSet"
-          />
-          <label for="ETH">ETH</label>
-          <input type="radio" name="TRON" id="TRON" class="w-auto ml-2" />
+        <form class="mb-1" action="" method="post">
+          <input type="radio" name="ETH" id="ETH" class="w-auto" checked />
           <img
             src="https://coin.top/production/logo/THb4CqiFdwNHsWsQCs4JhzwjMWys4aqCbF.png"
             alt=""
             class="imgSet"
           />
+          <label for="ETH">ETH</label>
+          <input type="radio" name="ETH" id="TRON" class="w-auto ml-5" />
+          <img
+            src="https://coin.top/production/logo/trx.png"
+            alt=""
+            class="imgSet"
+          />
           <label for="TRON">TRON</label>
-        </div>
+        </form>
         <p class="p-0 m-0" style="margin-top: 20px" v-t="'blockOne.wallet'"></p>
-        <input
-          class="input_bottom"
-          type="email"
-          placeholder="TUfgk2UTpLhvuLqhoBFZmWfheG9UQUJRih"
-        />
+        <input class="input_bottom" type="email" placeholder="" />
         <p class="p-0 m-0" v-t="'blockOne.ReviewReport'">获取审查报告</p>
         <input type="email" :placeholder="t('blockOne.input.emailAddress')" />
         <div class="c">

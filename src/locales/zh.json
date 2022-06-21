@@ -1,8 +1,8 @@
 {
   "greeting": "您好!",
   "blockOne.title": "Tether 审计",
-  "blockOne.wallet": "获取审计报告",
-  "blockOne.ReviewReport": "审查钱包",
+  "blockOne.wallet": "审查钱包",
+  "blockOne.ReviewReport": "获取审计报告",
   "blockOne.subtitle.1": "可替您的 USDT 资产进行审查并获取报告",
   "blockOne.subtitle.2": "增加您在场外交易OTC的可信度",
   "blockOne.input.emailAddress": "邮箱地址",

@@ -1,8 +1,8 @@
 {
   "greeting": "Chào Bạn",
   "blockOne.title": "Kiểm tra Tether USDT",
-  "blockOne.wallet": "Nhận báo cáo kiểm tra",
-  "blockOne.ReviewReport": "Kiểm tra ví",
+  "blockOne.wallet": "Kiểm tra ví",
+  "blockOne.ReviewReport": "Nhận báo cáo kiểm tra",
   "blockOne.subtitle.1": "Giúp bạn kiểm tra USDT và  lấy báo cáo kết quả",
   "blockOne.subtitle.2": "Tăng độ tin của bạn khi giao dịch trên các sàn OTC",
   "blockOne.input.emailAddress": "Đia chỉ email",

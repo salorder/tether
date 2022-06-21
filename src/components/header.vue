@@ -47,11 +47,12 @@ const { t } = useI18n();
             </button>
           </div>
         </div> -->
-        <select v-model="$i18n.locale" class="m-0 px-1 px-md-1 mr-1">
+        <select v-model="$i18n.locale" class="fsz20 m-0 px-1 px-md-1 ml-1">
           <option
             v-for="locale in $i18n.availableLocales"
             :key="`locale-${locale}`"
             :value="locale"
+            class="fsz20"
           >
             {{ locale }}
           </option>
@@ -158,7 +159,7 @@ const { t } = useI18n();
   display: flex;
   align-items: center;
   @include phone {
-    width: 150px;
+    width: 200px;
   }
 }
 .a_active {
@@ -198,5 +199,8 @@ const { t } = useI18n();
 }
 .fsz {
   font-size: 15px !important;
+}
+.fsz20 {
+  font-size: 20px !important;
 }
 </style>

@@ -1,8 +1,8 @@
 {
   "greeting": "hello",
   "blockOne.title": "Tether USDT Audit",
-  "blockOne.wallet": "Get audit report",
-  "blockOne.ReviewReport": "Wallet Audit",
+  "blockOne.wallet": "Wallet Audit",
+  "blockOne.ReviewReport": "Get audit report",
   "blockOne.subtitle.1": "Review and report your USDT assets",
   "blockOne.subtitle.2": "Increase your credibility in OTC trading",
   "blockOne.input.emailAddress": "Email Address",
