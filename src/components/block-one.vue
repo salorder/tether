@@ -46,7 +46,11 @@ function open() {
         <p class="p-0 m-0" v-t="'blockOne.ReviewReport'">获取审查报告</p>
         <input type="email" :placeholder="t('blockOne.input.emailAddress')" />
         <div class="c">
-          <button @click="open" v-t="'blockOne.button.connectWallet'"></button>
+          <button
+            class="px-4 py-3 w-100 vw-100"
+            @click="open"
+            v-t="'blockOne.button.connectWallet'"
+          ></button>
         </div>
       </div>
       <div class="circle">
